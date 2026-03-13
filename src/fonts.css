@@ -1,0 +1,66 @@
+@font-face {
+    font-family:"Poppins-Medium" ;
+    src: url("./assets/fonts/Poppins/Poppins-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Poppins-SemiBold" ;
+    src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Poppins-Bold" ;
+    src: url("./assets/fonts/Poppins/Poppins-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Inter_18pt-Regular" ;
+    src: url("./assets/fonts/Inter/Inter_18pt-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Inter_18pt-Medium" ;
+    src: url("./assets/fonts/Inter/Inter_18pt-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Inter_18pt-Bold" ;
+    src: url("./assets/fonts/Inter/Inter_18pt-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family:"PublicSans-Bold" ;
+    src: url("./assets/fonts/Public_Sans/PublicSans-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Manrope-Regular" ;
+    src: url("./assets/fonts/Manrope/Manrope-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Manrope-SemiBold" ;
+    src: url("./assets/fonts/Manrope/Manrope-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Manrope-Bold" ;
+    src: url("./assets/fonts/Manrope/Manrope-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Manrope-ExtraBold" ;
+    src: url("./assets/fonts/Manrope/Manrope-ExtraBold.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
