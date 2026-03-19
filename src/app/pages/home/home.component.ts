@@ -5,6 +5,8 @@ import { QualitySectionComponent } from './quality-section/quality-section.compo
 import { OurTopRestaurantsComponent } from './our-top-restaurants/our-top-restaurants.component';
 import { OurTopDishesComponent } from './our-top-dishes/our-top-dishes.component';
 import { ControlComponent } from './control/control.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { GetDiscountComponent } from '../../components/get-discount/get-discount.component';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +17,9 @@ import { ControlComponent } from './control/control.component';
     QualitySectionComponent,
     OurTopRestaurantsComponent,
     OurTopDishesComponent,
-    ControlComponent
+    ControlComponent,
+    ReviewsComponent,
+    GetDiscountComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

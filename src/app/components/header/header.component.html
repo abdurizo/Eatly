@@ -10,28 +10,24 @@
             >
           </a>
           <ul class="font-inter_medium text-[rgba(96,96,96,1)] flex gap-[50px]">
-            <li><a href="">Menu</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Contact</a></li>
+            <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+              <a [routerLink]="['menu']" routerLinkActive='text-[rgba(108,95,188,1)]'>Menu</a>
+            </li>
+            <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+              <a [routerLink]="['']">Blog</a>
+            </li>
+            <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+              <a [routerLink]="['']">Pricing</a>
+            </li>
+            <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+              <a [routerLink]="['']">Contact</a>
+            </li>
           </ul>
         </div>
         <div class="flex items-center gap-6 font-inter_bold">
           <button class="text-[rgba(96,96,96,1)]">Login</button>
           <button
-            class="
-            bg-[rgba(108,95,188,1)] 
-            px-[26px] 
-            py-[15px] 
-            rounded-[17px] 
-            text-white
-            border
-            duration-300
-            hover:text-[rgba(108,95,188,1)]
-            hover:border
-            hover:border-[rgba(108,95,188,1)]
-            hover:bg-white
-            "
+            class="bg-[rgba(108,95,188,1)] px-[26px] py-[15px] rounded-[17px] text-white border duration-300 hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
           >
             Sign up
           </button>

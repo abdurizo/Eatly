@@ -1,0 +1,22 @@
+<section class="container py-[100px] relative">
+  <h2 class="title font-poppins_semiBold">
+    <span class="text-[rgba(92,78,174,1)]">Customer</span> Say
+  </h2>
+
+  <div class="mt-[80px]">
+    <p-carousel
+      [value]="products"
+      [numVisible]="2"
+      [numScroll]="2"
+      [circular]="false"
+      [showIndicators]="true"
+      [showNavigators]="false"
+    >
+      <ng-template pTemplate="item" let-product>
+        <div class="mx-1">
+          <app-reviews-card></app-reviews-card>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</section>

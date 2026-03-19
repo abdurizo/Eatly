@@ -1,23 +1,23 @@
-@import"./fonts.css";
+@import "./fonts.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base{
-    body{
-        background-color: rgba(249, 249, 249, 1);
-    }
+@layer base {
+  body {
+    background-color: rgba(249, 249, 249, 1);
+  }
 }
-@layer components{
-    .container{
-        @apply max-w-[1300px] mx-auto px-6 overflow-hidden
-    }
-    .section{
-        @apply py-[100px] border-b-2
-    }
-    .title_bigger{
-        @apply  text-[50px] leading-[58px] text-[rgba(24,24,27,1)]
-    }
-    .title{
-         @apply  text-[45px] leading-[25px] text-center text-[rgba(50,49,66,1)]
-    }
+@layer components {
+  .container {
+    @apply max-w-[1300px] mx-auto px-6 overflow-hidden;
+  }
+  .section {
+    @apply py-[100px] border-b-2;
+  }
+  .title_bigger {
+    @apply text-[50px] leading-[58px] text-[rgba(24,24,27,1)];
+  }
+  .title {
+    @apply text-[45px] leading-[25px] text-center text-[rgba(50,49,66,1)];
+  }
 }
