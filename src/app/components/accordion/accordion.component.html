@@ -1,0 +1,82 @@
+<div class="mt-[30px]">
+  <div class="border-b pb-4">
+    <div
+      class="flex justify-between items-center cursor-pointer text-[16px]"
+      (click)="toggle(0)"
+    >
+      <h3 class="font-poppins_semiBold text-[rgba(50,49,66,1)]">
+        How long does delivery take?
+      </h3>
+      <div
+        class="pi w-[30px] h-[30px] rounded-[50px] bg-[rgba(108,95,188,1)] flex justify-center items-center text-white"
+        [ngClass]="activeIndex === 0 ? 'pi-minus' : 'pi-plus'"
+      ></div>
+    </div>
+
+    <div
+      class="overflow-hidden transition-all duration-300 ease-in-out"
+      [ngClass]="
+        activeIndex === 0 ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
+      "
+    >
+      <p class="text-[rgba(153,153,153,1)]">
+        This platform works by connecting users with services...
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="mt-[30px]">
+  <div class="border-b pb-4">
+    <div
+      class="flex justify-between items-center cursor-pointer text-[16px]"
+      (click)="toggle(1)"
+    >
+      <h3 class="font-poppins_semiBold text-[rgba(50,49,66,1)]">
+        How does it work?
+      </h3>
+      <div
+        class="pi w-[30px] h-[30px] rounded-[50px] bg-[rgba(108,95,188,1)] flex justify-center items-center text-white"
+        [ngClass]="activeIndex === 1 ? 'pi-minus' : 'pi-plus'"
+      ></div>
+    </div>
+
+    <div
+      class="overflow-hidden transition-all duration-300 ease-in-out"
+      [ngClass]="
+        activeIndex === 1 ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
+      "
+    >
+      <p class="text-[rgba(153,153,153,1)]">
+        This platform works by connecting users with services...
+      </p>
+    </div>
+  </div>
+</div>
+<div class="mt-[30px]">
+  <div class="border-b pb-4">
+    <div
+      class="flex justify-between items-center cursor-pointer text-[16px]"
+      (click)="toggle(2)"
+    >
+      <h3 class="font-poppins_semiBold text-[rgba(50,49,66,1)]">
+        What payment options do you accept?
+      </h3>
+      <div
+        class="pi w-[30px] h-[30px] rounded-[50px] bg-[rgba(108,95,188,1)] flex justify-center items-center text-white"
+        [ngClass]="activeIndex === 2 ? 'pi-minus' : 'pi-plus'"
+      ></div>
+    </div>
+
+    <div
+      class="overflow-hidden transition-all duration-300 ease-in-out"
+      [ngClass]="
+        activeIndex === 2 ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
+      "
+    >
+      <p class="text-[rgba(153,153,153,1)]">
+        This platform works by connecting users with services...
+      </p>
+    </div>
+  </div>
+</div>

@@ -5,15 +5,17 @@
 }
 
 ::ng-deep .p-carousel-indicator button {
-    width: 50px;
+    width: 30px;
     height: 10px;
     background: #e8e6f2 !important;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
 ::ng-deep .p-carousel-indicator.p-highlight button {
-    width: 50px;
+    width: 70px;
     height: 10px;
     background: #6c5fbc !important;
     border-radius: 10px;
+    transition: 0.3s;
 }

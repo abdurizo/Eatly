@@ -1,18 +1,1 @@
-::ng-deep .p-carousel-indicators {
-  display: flex !important;
-  justify-content: center;
-  margin-top: 20px;
-}
 
-::ng-deep .p-carousel-indicator button {
-  width: 50px;
-  height: 10px;
-  background: #e8e6f2 !important; /* временно */
-  border-radius: 10px;
-}
-::ng-deep .p-carousel-indicator.p-highlight button {
-  width: 50px;
-  height: 10px;
-  background: #6c5fbc !important; /* временно */
-  border-radius: 10px;
-}

@@ -1,0 +1,32 @@
+<header class="container grid grid-cols-3 items-end mt-[81px]">
+  <div class="col-span-2">
+    <p-carousel
+      [value]="products"
+      [numVisible]="1"
+      [numScroll]="1"
+      [circular]="false"
+      [showIndicators]="true"
+      [showNavigators]="false"
+    >
+      <ng-template pTemplate="item" let-product>
+        <div class="mx-1">
+          <div class="h-[255px] relaative">
+            <app-get-discount></app-get-discount>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+    <div class="flex items-center gap-[30px] bg-[rgba(237,237,237,1)] rounded-[20px] p-[20px] mt-[90px]">
+      <img src="../../../../assets/icon/search.svg" alt="" class="">
+      <input 
+      type="text" 
+      placeholder="Search" 
+      class="outline-none bg-[rgba(237,237,237,1)] w-full text-[20px] py-[5px] text-[rgba(170,171,186,1)]">
+    </div>
+    <div class="group  overflow-hidden font-poppins_medium text-[20px] mt-[35px] grid grid-cols-2 border-2 border-[rgba(108,95,188,1)] rounded-[15px]">
+      <button class="text-[rgba(108,95,188,1)] py-[20px] group-hover:bg-[rgba(108,95,188,1)] group-hover:text-white">Food</button>
+      <button class="bg-[rgba(108,95,188,1)] text-white py-[20px] group-hover:bg-white group-hover:text-[rgba(108,95,188,1)]">Resturent</button>
+    </div>
+  </div>
+  <div class=""></div>
+</header>

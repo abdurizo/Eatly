@@ -20,4 +20,7 @@
   .title {
     @apply text-[45px] leading-[25px] text-center text-[rgba(50,49,66,1)];
   }
+  .title_small {
+    @apply text-[35px] leading-[25px] text-[rgba(50,49,66,1)];
+  }
 }

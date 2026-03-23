@@ -7,10 +7,18 @@
       <span class="text-[rgba(108,95,188,1)] font-poppins_semiBold">eatly</span>
     </a>
     <ul class="font-inter_medium text-[#999999] flex gap-[50px]">
-      <li class="duration-300 hover:text-[rgba(108,95,188,1)]"><a href="">Menu</a></li>
-      <li class="duration-300 hover:text-[rgba(108,95,188,1)]"><a href="">Blog</a></li>
-      <li class="duration-300 hover:text-[rgba(108,95,188,1)]"><a href="">Pricing</a></li>
-      <li class="duration-300 hover:text-[rgba(108,95,188,1)]"><a href="">Contact</a></li>
+      <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+        <a [routerLink]="['menu']">Menu</a>
+      </li>
+      <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+        <a [routerLink]="['']">Blog</a>
+      </li>
+      <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+        <a [routerLink]="['']">Pricing</a>
+      </li>
+      <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+        <a [routerLink]="['']">Contact</a>
+      </li>
     </ul>
   </div>
   <div class="container py-[50px] flex items-center justify-between">
