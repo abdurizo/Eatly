@@ -19,3 +19,17 @@
     border-radius: 10px;
     transition: 0.3s;
 }
+::ng-deep .p-slider {
+    background: #6C5FBC;
+    border-radius: 8px;
+}
+::ng-deep .p-slider .p-slider-range {
+    background: #6C5FBC;
+}
+::ng-deep .p-slider .p-slider-handle {
+    background: #6C5FBC;
+    border: 4px solid #BBB6D7;
+}
+::ng-deep .p-slider .p-slider-handle:focus {
+    box-shadow: none !important;
+}

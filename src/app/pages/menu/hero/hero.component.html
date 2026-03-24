@@ -1,4 +1,4 @@
-<header class="container grid grid-cols-3 items-end mt-[81px]">
+<header class="container grid grid-cols-3 gap-[100px] mt-[81px]">
   <div class="col-span-2">
     <p-carousel
       [value]="products"
@@ -16,17 +16,77 @@
         </div>
       </ng-template>
     </p-carousel>
-    <div class="flex items-center gap-[30px] bg-[rgba(237,237,237,1)] rounded-[20px] p-[20px] mt-[90px]">
-      <img src="../../../../assets/icon/search.svg" alt="" class="">
-      <input 
-      type="text" 
-      placeholder="Search" 
-      class="outline-none bg-[rgba(237,237,237,1)] w-full text-[20px] py-[5px] text-[rgba(170,171,186,1)]">
+    <div
+      class="flex items-center gap-[30px] bg-[rgba(237,237,237,1)] rounded-[20px] p-[20px] mt-[90px]"
+    >
+      <img src="../../../../assets/icon/search.svg" alt="" class="" />
+      <input
+        type="text"
+        placeholder="Search"
+        class="outline-none bg-[rgba(237,237,237,1)] w-full text-[20px] py-[5px] text-[rgba(170,171,186,1)]"
+      />
     </div>
-    <div class="group  overflow-hidden font-poppins_medium text-[20px] mt-[35px] grid grid-cols-2 border-2 border-[rgba(108,95,188,1)] rounded-[15px]">
-      <button class="text-[rgba(108,95,188,1)] py-[20px] group-hover:bg-[rgba(108,95,188,1)] group-hover:text-white">Food</button>
-      <button class="bg-[rgba(108,95,188,1)] text-white py-[20px] group-hover:bg-white group-hover:text-[rgba(108,95,188,1)]">Resturent</button>
+    <div
+      class="group overflow-hidden font-poppins_medium text-[20px] mt-[35px] grid grid-cols-2 border-2 border-[rgba(108,95,188,1)] rounded-[15px]"
+    >
+      <button
+        class="text-[rgba(108,95,188,1)] py-[20px] group-hover:bg-[rgba(108,95,188,1)] group-hover:text-white"
+      >
+        Food
+      </button>
+      <button
+        class="bg-[rgba(108,95,188,1)] text-white py-[20px] group-hover:bg-white group-hover:text-[rgba(108,95,188,1)]"
+      >
+        Resturent
+      </button>
     </div>
   </div>
-  <div class=""></div>
+  <div class="flex justify-center items-center">
+    <div class="rounded-[20px] bg-white p-[32px] shadow-xl">
+      <h3 class="font-poppins_semiBold text-[#323142] text-[20px]">Category</h3>
+      <div class="flex gap-[12px] mt-[17px] mb-[25px]">
+        <app-category-card></app-category-card>
+        <app-category-card></app-category-card>
+        <app-category-card></app-category-card>
+        <app-category-card></app-category-card>
+      </div>
+      <h3 class="font-poppins_semiBold text-[#323142] text-[20px]">Sort By</h3>
+      <div class="flex justify-between mt-[13px] mb-[28px]">
+        <div class="">
+          <p class="text-[#ACADB9] text-[15px] found-poppins_medium">
+            Recomended
+          </p>
+          <p class="text-[#ACADB9] text-[15px] found-poppins_medium">
+            Most Popular
+          </p>
+        </div>
+        <div class="">
+          <p class="text-[#6C5FBC] text-[15px] found-poppins_medium">
+            Fast Delivery
+          </p>
+        </div>
+      </div>
+      <h3 class="font-poppins_semiBold mb-[17px] text-[#323142] text-[20px]">
+        Price
+      </h3>
+
+      <p-slider [min]="0" [max]="1000"></p-slider>
+      <div
+        class="flex justify-between font-inter_medium text-[10px] text-[#C2C3CB] mb-[38px] mt-[15px]"
+      >
+        <span>$0</span>
+        <span>$25</span>
+        <span>$50</span>
+        <span>$100</span>
+        <span>$500</span>
+        <span>$1000</span>
+      </div>
+      <a
+        [routerLink]="['/checkout-page']"
+        class="w-full inline-block text-center font-inter_medium bg-[rgba(108,95,188,1)] px-[26px] py-[15px] rounded-[17px] text-white border duration-300 hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
+      >
+        Apply
+      </a>
+    </div>
+  </div>
 </header>
