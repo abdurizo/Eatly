@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
 import { TagModule } from 'primeng/tag';
-import { ReviewsCardComponent } from '../../../components/reviews-card/reviews-card.component';
+import { ReviewsCardComponent } from '../reviews-card/reviews-card.component';
+
 
 @Component({
   selector: 'app-reviews',

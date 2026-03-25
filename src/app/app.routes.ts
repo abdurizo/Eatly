@@ -3,6 +3,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { SelfProductComponent } from './pages/self-product/self-product.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
+import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
 
 export const routes: Routes = [
   {
@@ -21,5 +22,9 @@ export const routes: Routes = [
   {
     path: 'checkout-page',
     component: CheckoutPageComponent,
+  },
+  {
+    path: 'pricing-page',
+    component: PricingPageComponent,
   },
 ];

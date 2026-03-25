@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { PurchasCardComponent } from '../../../components/purchas-card/purchas-card.component';
-import { PurchasesIncreasedCardComponent } from '../../../components/purchases-increased-card/purchases-increased-card.component';
+import { PurchasCardComponent } from '../purchas-card/purchas-card.component';
+import { PurchasesIncreasedCardComponent } from '../purchases-increased-card/purchases-increased-card.component';
+
 
 @Component({
   selector: 'app-control',
