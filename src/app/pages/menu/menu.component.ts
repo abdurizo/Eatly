@@ -1,17 +1,13 @@
 import { Component } from '@angular/core';
-import { HeroComponent } from './hero/hero.component';
-import { OurTopRestaurantsComponent } from './our-top-restaurants/our-top-restaurants.component';
-import { OurTopDishesComponent } from './our-top-dishes/our-top-dishes.component';
-import { FrequentlyAskedComponent } from '../../components/frequently-asked/frequently-asked.component';
+import { Router, RouterOutlet } from '@angular/router';
+import { MenuBasicComponent } from './menu-basic/menu-basic.component';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
   imports: [
-    HeroComponent,
-    OurTopRestaurantsComponent,
-    OurTopDishesComponent,
-    FrequentlyAskedComponent,
+    RouterOutlet,
+   MenuBasicComponent
   ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css',
