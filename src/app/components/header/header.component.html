@@ -11,13 +11,21 @@
           </a>
           <ul class="font-inter_medium text-[rgba(96,96,96,1)] flex gap-[50px]">
             <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
-              <a [routerLink]="['/menu']" routerLinkActive='text-[rgba(108,95,188,1)]'>Menu</a>
+              <a
+                [routerLink]="['/menu']"
+                routerLinkActive="text-[rgba(108,95,188,1)]"
+                >Menu</a
+              >
             </li>
             <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
               <a [routerLink]="['']">Blog</a>
             </li>
             <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
-              <a [routerLink]="['/pricing-page']" routerLinkActive='text-[rgba(108,95,188,1)]' >Pricing</a>
+              <a
+                [routerLink]="['/pricing-page']"
+                routerLinkActive="text-[rgba(108,95,188,1)]"
+                >Pricing</a
+              >
             </li>
             <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
               <a [routerLink]="['']">Contact</a>
@@ -25,8 +33,11 @@
           </ul>
         </div>
         <div class="flex items-center gap-6 font-inter_bold">
-          <button class="text-[rgba(96,96,96,1)]">Login</button>
+          <button class="text-[rgba(96,96,96,1)]" (click)="openLogin()">
+            Login
+          </button>
           <button
+            (click)="openSingUp()"
             class="bg-[rgba(108,95,188,1)] px-[26px] py-[15px] rounded-[17px] text-white border duration-300 hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
           >
             Sign up
@@ -36,3 +47,15 @@
     </div>
   </div>
 </header>
+@if (modalType) {
+  <div
+    class="w-full h-full bg-[rgba(0,0,0,0.5)] fixed left-0 top-0 z-10 flex items-center justify-center"
+  >
+    @if (modalType === "login") {
+      <app-login></app-login>
+    }
+    @if (modalType === "sing_up") {
+      <app-sing-up></app-sing-up>
+    }
+  </div>
+}
