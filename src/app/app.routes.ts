@@ -5,6 +5,8 @@ import { SelfProductComponent } from './pages/self-product/self-product.componen
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
 import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
 import { MenuBasicComponent } from './pages/menu/menu-basic/menu-basic.component';
+import { SingUpComponent } from './components/sing-up/sing-up.component';
+import { LoginComponent } from './components/login/login.component';
 
 export const routes: Routes = [
   {
@@ -22,8 +24,8 @@ export const routes: Routes = [
         pathMatch: 'full',
       },
       {
-        path:'menu-basic',
-        component:MenuBasicComponent
+        path: 'menu-basic',
+        component: MenuBasicComponent,
       },
       {
         path: 'self-product',
@@ -35,9 +37,9 @@ export const routes: Routes = [
       },
     ],
   },
-
   {
     path: 'pricing-page',
     component: PricingPageComponent,
   },
+  
 ];

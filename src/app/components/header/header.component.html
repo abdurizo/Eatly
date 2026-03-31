@@ -52,10 +52,10 @@
     class="w-full h-full bg-[rgba(0,0,0,0.5)] fixed left-0 top-0 z-10 flex items-center justify-center"
   >
     @if (modalType === "login") {
-      <app-login></app-login>
+      <app-login (close)="closeModal()" (openSingUp)="openSingUp()"></app-login>
     }
     @if (modalType === "sing_up") {
-      <app-sing-up></app-sing-up>
+      <app-sing-up (close)="closeModal()" (openLogin)="openLogin()"></app-sing-up>
     }
   </div>
 }

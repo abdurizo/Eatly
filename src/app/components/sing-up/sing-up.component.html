@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 w-[1440px]">
+<div class="relative grid grid-cols-2 w-[1440px]">
   <div class="bg-white p-[48px]">
     <div class="">
       <a [routerLink]="['/']" class="flex items-center gap-2">
@@ -97,6 +97,17 @@
             placeholder="Password"
             class="w-full bg-[#F5F5F5] outline-none placeholder:font-poppins_semiBold placeholder:text-[#C2C3CB] font-poppins_medium text-[#6C5FBC]"
           />
+          <button (click)="togglePassword()" type="button" class="groupa">
+            @if (showPassword) {
+              <i
+                class="pi pi-eye text-[#005A6459] group-hover:text-[#6C5FBC] group-focus-within:text-[#6C5FBC]"
+              ></i>
+            } @else {
+              <i
+                class="pi pi-eye-slash text-[#005A6459] group-hover:text-[#6C5FBC] group-focus-within:text-[#6C5FBC]"
+              ></i>
+            }
+          </button>
         </div>
         <button
           class="w-[383px] inline-block text-center font-inter_medium bg-[rgba(108,95,188,1)] px-[26px] py-[15px] rounded-[17px] text-white border duration-300 hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
@@ -104,12 +115,36 @@
           SIGN UP
         </button>
       </form>
-      <p class="text-center text-[18px] text-[#3E3E3E] mt-[23px]">Already Have An Account? <a href="#" class="text-[#6C5FBC] font-poppins_bold">Log In</a></p>
+      <p class="text-center text-[18px] text-[#3E3E3E] mt-[23px]">
+        Already Have An Account?
+        <button
+          (click)="openLogin.emit()"
+          class="text-[#6C5FBC] font-poppins_bold"
+        >
+          Log In
+        </button>
+      </p>
     </div>
-    <div class="flex justify-between text-[#718096] font-poppins_medium mt-[90px]">
-        <p class="">Privacy Policy</p>
-        <p class="">Copyright 2022</p>
+    <div
+      class="flex justify-between text-[#718096] font-poppins_medium mt-[90px]"
+    >
+      <p class="">Privacy Policy</p>
+      <p class="">Copyright 2022</p>
     </div>
   </div>
-  <div class="bg-[#6C5FBC]"></div>
+  <div class="bg-[#6C5FBC] flex justify-center items-center flex-col p-[70px]">
+    <img src="../../../assets/images/hero-dish.png" alt="" />
+    <div class="text-white text-center">
+      <h3 class="font-manrope_bold text-[40px]">Find Foods With Love</h3>
+      <p class="font manrope_medium text-[14px]">
+        Eatly Is The Food Delivery Dashboard And Having More Than 2K+ Dishes
+        Including Asian, Chinese, Italians And Many More. Our Dashboard Helps
+        You To Manage Orders And Money.
+      </p>
+    </div>
+  </div>
+  <button
+    (click)="close.emit()"
+    class="absolute top-[10px] right-[10px] pi pi-times text-white text-[30px]"
+  ></button>
 </div>

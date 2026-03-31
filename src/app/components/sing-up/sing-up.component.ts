@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -6,8 +6,13 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './sing-up.component.html',
-  styleUrl: './sing-up.component.css'
+  styleUrl: './sing-up.component.css',
 })
 export class SingUpComponent {
-
+  @Output() close = new EventEmitter<void>();
+  @Output() openLogin = new EventEmitter<void>();
+  showPassword = false;
+  togglePassword() {
+    this.showPassword = !this.showPassword;
+  }
 }
