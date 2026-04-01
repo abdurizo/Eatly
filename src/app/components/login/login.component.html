@@ -57,7 +57,7 @@
           <input
             type="text"
             placeholder="Email"
-            class="w-full bg-[#F5F5F5] outline-none placeholder:font-poppins_semiBold placeholder:text-[#C2C3CB] font-poppins_medium text-[#6C5FBC]"
+            class="w-full bg-[#F5F5F5] outline-none text-[#C2C3CB] placeholder:font-poppins_semiBold placeholder:text-[#C2C3CB] font-poppins_medium focus-within:text-[#6C5FBC]"
           />
         </div>
         <div
@@ -76,7 +76,7 @@
           <input
             [type]="showPassword ? 'text' : 'password'"
             placeholder="Password"
-            class="w-full bg-[#F5F5F5] outline-none placeholder:font-poppins_semiBold placeholder:text-[#C2C3CB] font-poppins_medium text-[#6C5FBC]"
+            class="w-full bg-[#F5F5F5] outline-none text-[#C2C3CB] placeholder:font-poppins_semiBold placeholder:text-[#C2C3CB] font-poppins_medium focus-within:text-[#6C5FBC]"
           />
          <button (click)="togglePassword()" type="button" class="groupa">
             @if (showPassword) {
