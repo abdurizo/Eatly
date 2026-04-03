@@ -12,13 +12,13 @@
     @apply max-w-[1300px] mx-auto px-6 overflow-hidden;
   }
   .section {
-    @apply  border-b-2 lg:py-[70px] xl:py-[100px];
+    @apply  border-b-2 sm:py-[40px] md:py-[70px] xl:py-[100px];
   }
   .title_bigger {
-    @apply lg:text-[36px] xl:text-[50px] leading-[58px] text-[rgba(24,24,27,1)];
+    @apply sm:text-[24px] md:text-[36px] xl:text-[50px] sm:leading-[30px] md:leading-[41px] xl:leading-[58px] text-[rgba(24,24,27,1)];
   }
   .title {
-    @apply lg:text-[32px] xl:text-[45px] leading-[25px] text-center text-[rgba(50,49,66,1)];
+    @apply sm:text-[19px] md:text-[32px] xl:text-[45px] leading-[25px] text-center text-[rgba(50,49,66,1)];
   }
   .title_small {
     @apply text-[35px] leading-[25px] text-[rgba(50,49,66,1)];

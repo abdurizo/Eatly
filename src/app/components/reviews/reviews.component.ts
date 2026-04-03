@@ -14,4 +14,11 @@ import { ReviewsCardComponent } from '../reviews-card/reviews-card.component';
 })
 export class ReviewsComponent {
 products = [1, 2, 3, 4, 5, 6];
+responsiveOptions = [
+  {
+    breakpoint: '640px',
+    numVisible: 1,
+    numScroll: 1
+  }
+];
 }
