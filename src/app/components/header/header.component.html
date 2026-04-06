@@ -14,7 +14,6 @@
         >
       </a>
 
-      <!-- Nav links — скрыты на мобильном -->
       <ul
         class="font-inter_medium text-[rgba(96,96,96,1)] hidden md:flex sm:gap-[25px] md:gap-[38px] xl:gap-[50px] md:text-[12px] xl:text-[17px]"
       >
@@ -40,7 +39,6 @@
         </li>
       </ul>
 
-      <!-- Кнопки — скрыты на мобильном -->
       <div
         class="hidden md:flex items-center gap-6 font-inter_bold md:text-[12px] xl:text-[17px]"
       >
@@ -55,22 +53,22 @@
         </button>
       </div>
 
-      <!-- Бургер — только на мобильном -->
+      <!-- Бургер -->
       <button
         class="md:hidden flex flex-col gap-[5px] p-2 z-50"
         (click)="toggleMenu()"
       >
         <span
-          class="block w-[22px] h-[2px] bg-[rgba(96,96,96,1)] rounded transition-all duration-300"
+          class="block w-[22px] h-[2px] bg-[#201F1F] rounded transition-all duration-300"
           [class.rotate-45]="menuOpen"
           [class.translate-y-[7px]]="menuOpen"
         ></span>
         <span
-          class="block w-[22px] h-[2px] bg-[rgba(96,96,96,1)] rounded transition-all duration-300"
+          class="block w-[22px] h-[2px] bg-[#201F1F] rounded transition-all duration-300"
           [class.opacity-0]="menuOpen"
         ></span>
         <span
-          class="block w-[22px] h-[2px] bg-[rgba(96,96,96,1)] rounded transition-all duration-300"
+          class="block w-[22px] h-[2px] bg-[#201F1F] rounded transition-all duration-300"
           [class.-rotate-45]="menuOpen"
           [class.-translate-y-[7px]]="menuOpen"
         ></span>
@@ -130,7 +128,7 @@
 
 @if (modalType) {
   <div
-    class="w-full h-full bg-[rgba(0,0,0,0.5)] fixed left-0 top-0 z-10 flex items-center justify-center"
+    class="w-full h-full bg-[rgba(0,0,0,0.5)] fixed left-0 top-0 z-10 flex items-center justify-center items-center"
   >
     @if (modalType === "login") {
       <app-login (close)="closeModal()" (openSingUp)="openSingUp()"></app-login>
