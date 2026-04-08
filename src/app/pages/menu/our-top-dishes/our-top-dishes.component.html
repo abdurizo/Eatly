@@ -1,18 +1,30 @@
 <section class="section container">
-  <div class="flex justify-between mt-[65px]">
+  <div class="flex justify-between">
     <h2 class="title font-poppins_semiBold">
       Our Top <span class="text-[rgba(92,78,174,1)]">Dishes</span>
     </h2>
-    <a href="#" class="font-poppins_medium text-[#ACADB9] text-[20px]"
-      >View All</a
-    >
+    <a
+      href="#"
+      class="hidden sm:inline-block font-poppins_medium text-[#ACADB9] text-[20px]"
+      >View All
+      <i class="pi pi-arrow-right ml-[13px] sm:text-[14px] xl:text-[20px]"></i>
+    </a>
   </div>
-  <div class="grid grid-cols-5 gap-[30px] mt-[85px]">
+  <div class="grid grid-cols-2 sm:grid-cols-5 gap-[30px] mt-[85px]">
     <app-dish-card></app-dish-card>
     <app-dish-card></app-dish-card>
     <app-dish-card></app-dish-card>
     <app-dish-card></app-dish-card>
     <app-dish-card></app-dish-card>
+  </div>
+  <div
+    class="sm:hidden font-poppins_medium flex justify-end mt-[60px] sm:mt-[25px] md:mt-[46px] xl:mt-[65px]"
+  >
+    <a
+      href="#"
+      class="text-[#ACADB9] text-[20px] sm:text-[14px] xl:text-[20px] flex items-center"
+      >View All
+      <i class="pi pi-arrow-right ml-[13px] sm:text-[14px] xl:text-[20px]"></i>
+    </a>
   </div>
 </section>
-

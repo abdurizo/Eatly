@@ -1,5 +1,5 @@
-<header class="container grid grid-cols-3 gap-[100px] mt-[81px]">
-  <div class="col-span-2">
+<header class="container sm:grid sm:grid-cols-3 gap-[70px] xl:gap-[100px] mt-[46px] sm:mt-[81px]">
+  <div class="sm:col-span-2">
     <p-carousel
       [value]="products"
       [numVisible]="1"
@@ -9,70 +9,70 @@
       [showNavigators]="false"
     >
       <ng-template pTemplate="item" let-product>
-        <div class="mx-1">
-          <div class="h-[255px] relaative">
+        <div class=" sm:mb-[20px] xl:mb-[70px]">
+          <div class="relaative">
             <app-get-discount></app-get-discount>
           </div>
         </div>
       </ng-template>
     </p-carousel>
     <div
-      class="flex items-center gap-[30px] bg-[rgba(237,237,237,1)] rounded-[20px] p-[20px] mt-[90px]"
+      class="flex items-center gap-[30px] bg-[rgba(237,237,237,1)] rounded-[20px] p-[14px] sm:p-[20px] mt-[56px] sm:mt-[60px] xl:mt-[90px]"
     >
       <img src="../../../../assets/icon/search.svg" alt="" class="" />
       <input
         type="text"
         placeholder="Search"
-        class="outline-none bg-[rgba(237,237,237,1)] w-full text-[20px] py-[5px] text-[rgba(170,171,186,1)]"
+        class="outline-none bg-[rgba(237,237,237,1)] w-full text-[12px] sm:text-[15px] xl:text-[20px] py-[5px] text-[rgba(170,171,186,1)]"
       />
     </div>
     <div
-      class="group overflow-hidden font-poppins_medium text-[20px] mt-[35px] grid grid-cols-2 border-2 border-[rgba(108,95,188,1)] rounded-[15px]"
+      class="group overflow-hidden font-poppins_medium text-[12px] sm:text-[20px] mt-[8px] sm:mt-[35px] grid grid-cols-2 border-2 border-[rgba(108,95,188,1)] rounded-[15px]"
     >
       <button
-        class="text-[rgba(108,95,188,1)] py-[20px] group-hover:bg-[rgba(108,95,188,1)] group-hover:text-white"
+        class="text-[rgba(108,95,188,1)] sm:text-[13px]  py-[15px] xl:py-[20px] group-hover:bg-[rgba(108,95,188,1)] group-hover:text-white"
       >
         Food
       </button>
       <button
-        class="bg-[rgba(108,95,188,1)] text-white py-[20px] group-hover:bg-white group-hover:text-[rgba(108,95,188,1)]"
+        class="bg-[rgba(108,95,188,1)] sm:text-[13px]  text-white py-[15px] xl:py-[20px] group-hover:bg-white group-hover:text-[rgba(108,95,188,1)]"
       >
         Resturent
       </button>
     </div>
   </div>
-  <div class="flex justify-center items-center">
-    <div class="rounded-[20px] bg-white p-[32px] shadow-xl">
-      <h3 class="font-poppins_semiBold text-[#323142] text-[20px]">Category</h3>
-      <div class="flex gap-[12px] mt-[17px] mb-[25px]">
+  <div class="flex justify-center items-center mt-[50px] mb-[50px] sm:mb-[0px] sm:mt-[0]">
+    <div class="rounded-[20px] bg-white p-[26px] sm:p-[22px] xl:p-[32px] shadow-xl">
+      <h3 class="font-poppins_semiBold text-[#323142] text-[15px] xl:text-[20px]">Category</h3>
+      <div class="flex gap-[9px] xl:gap-[12px] mt-[12px] xl:mt-[17px] mb-[18px] xl:mb-[25px]">
         <app-category-card></app-category-card>
         <app-category-card></app-category-card>
         <app-category-card></app-category-card>
         <app-category-card></app-category-card>
       </div>
-      <h3 class="font-poppins_semiBold text-[#323142] text-[20px]">Sort By</h3>
-      <div class="flex justify-between mt-[13px] mb-[28px]">
+      <h3 class="font-poppins_semiBold text-[#323142] text-[15px] xl:text-[20px]">Sort By</h3>
+      <div class="flex justify-between mt-[8px] xl:mt-[13px] mb-[20px] xl:mb-[28px]">
         <div class="">
-          <p class="text-[#ACADB9] text-[15px] found-poppins_medium">
+          <p class="text-[#ACADB9] text-[10px] xl:text-[15px] found-poppins_medium">
             Recomended
           </p>
-          <p class="text-[#ACADB9] text-[15px] found-poppins_medium">
+          <p class="text-[#ACADB9] text-[10px] xl:text-[15px] found-poppins_medium">
             Most Popular
           </p>
         </div>
         <div class="">
-          <p class="text-[#6C5FBC] text-[15px] found-poppins_medium">
+          <p class="text-[#6C5FBC] text-[10px] xl:text-[15px] found-poppins_medium">
             Fast Delivery
           </p>
         </div>
       </div>
-      <h3 class="font-poppins_semiBold mb-[17px] text-[#323142] text-[20px]">
+      <h3 class="font-poppins_semiBold mb-[11px] xl:mb-[17px] text-[#323142] text-[15px] xl:text-[20px]">
         Price
       </h3>
 
       <p-slider [min]="0" [max]="1000"></p-slider>
       <div
-        class="flex justify-between font-inter_medium text-[10px] text-[#C2C3CB] mb-[38px] mt-[15px]"
+        class="flex justify-between font-inter_medium text-[7px] mx:text-[10px] text-[#C2C3CB] mb-[26px] xl:mb-[38px] mt-[10px] xl:mt-[15px]"
       >
         <span>$0</span>
         <span>$25</span>
@@ -83,7 +83,7 @@
       </div>
       <a
         [routerLink]="['/menu/checkout-page']"
-        class="w-full inline-block text-center font-inter_medium bg-[rgba(108,95,188,1)] px-[26px] py-[15px] rounded-[17px] text-white border duration-300 hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
+        class="w-full inline-block text-center font-inter_medium bg-[rgba(108,95,188,1)]  xl:px-[26px] py-[13px] xl:py-[15px] rounded-[17px] text-white border duration-300 hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
       >
         Apply
       </a>

@@ -1,42 +1,61 @@
-<footer class="bg-[#EAEAEA] mt-[156px] sm:pt-[68px] xl:pt-[95px]">
-  <div
-    class="container border-b-2 border-[#818181] flex items-center justify-between pb-[30px]"
-  >
-    <a [routerLink]="['/']" class="flex items-center gap-2">
-      <img src="../../../assets/icon/logo.svg" alt="" class="lg:w-[44px] xl:w-[60px]" />
-      <span class="text-[rgba(108,95,188,1)] font-poppins_semiBold sm:text-[20px] xl:text-[28px]">eatly</span>
-    </a>
-    <ul class="font-inter_medium text-[#999999] flex gap-[50px] sm:text-[12px] xl:text-[17px]">
-      <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
-        <a [routerLink]="['menu']">Menu</a>
-      </li>
-      <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
-        <a [routerLink]="['']">Blog</a>
-      </li>
-      <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
-        <a [routerLink]="['']">Pricing</a>
-      </li>
-      <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
-        <a [routerLink]="['']">Contact</a>
-      </li>
-    </ul>
-  </div>
-  <div class="container sm:py-[40px] xl:py-[57px] flex items-center justify-between">
-    <p class="font-inter_medium text-[#999999] sm:text-[12px] xl:text-[17px]">
+<footer class="bg-[#EAEAEA] mt-[156px] pt-[55px] sm:pt-[68px] xl:pt-[95px]">
+    <div
+      class="container border-b-2 border-[#818181] flex items-start justify-between sm:block"
+    >
+      <div class="flex items-start sm:items-center justify-between flex-col sm:flex-row pb-[30px]">
+        <a [routerLink]="['/']" class="flex items-center gap-2 mb-[50px] sm:mb-[0]">
+          <img src="../../../assets/icon/logo.svg" alt="" class="lg:w-[44px] xl:w-[60px]" />
+          <span class="text-[rgba(108,95,188,1)] font-poppins_semiBold sm:text-[20px] xl:text-[28px]">eatly</span>
+        </a>
+
+        
+        <ul class="font-inter_medium text-[#999999] flex flex-col sm:flex-row gap-[30px] sm:gap-[50px] sm:text-[12px] xl:text-[17px]">
+          <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+            <a [routerLink]="['menu']">Menu</a>
+          </li>
+          <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+            <a [routerLink]="['']">Blog</a>
+          </li>
+          <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+            <a [routerLink]="['']">Pricing</a>
+          </li>
+          <li class="duration-300 hover:text-[rgba(108,95,188,1)]">
+            <a [routerLink]="['']">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class=" sm:hidden flex items-center gap-[20px] pr-6 pt-[15px]">
+        <a href="#">
+          <img src="../../../assets/icon/instagram.svg" alt="" class="w-[15px] h-[15px] xl:w-[21px] xl:h-[21px]" />
+        </a>
+        <a href="#">
+          <img src="../../../assets/icon/linkedin.svg" alt="" class="w-[15px] h-[15px] xl:w-[21px] xl:h-[21px]" />
+        </a>
+        <a href="#">
+          <img src="../../../assets/icon/facebook.svg" alt="" class="w-[15px] h-[15px] xl:w-[21px] xl:h-[21px]" />
+        </a>
+        <a href="#">
+          <img src="../../../assets/icon/twiter.svg" alt="" class="w-[15px] h-[15px] xl:w-[21px] xl:h-[21px]" />
+        </a>
+      </div>
+    </div>
+
+  <div class="container py-[26px] sm:py-[40px] xl:py-[57px] flex items-center justify-center sm:justify-between">
+    <p class=" font-inter_medium text-[#999999] text-[12px] xl:text-[17px]">
       © 2023 EATLY All Rights Reserved.
     </p>
-    <div class="flex items-center sm:gap-[38px] xl:gap-[53px]">
+    <div class="hidden sm:flex items-center sm:gap-[38px] xl:gap-[53px]">
       <a href="#">
-        <img src="../../../assets/icon/instagram.svg" alt="" class="sm:w-[15px] sm:h-[15px] xl:w-[21px] xl:h-[21px]" />
+        <img src="../../../assets/icon/instagram.svg" alt="" class="w-[15px] h-[15px] xl:w-[21px] xl:h-[21px]" />
       </a>
       <a href="#">
-        <img src="../../../assets/icon/linkedin.svg" alt="" class="sm:w-[15px] sm:h-[15px] xl:w-[21px] xl:h-[21px]" />
+        <img src="../../../assets/icon/linkedin.svg" alt="" class="w-[15px] h-[15px] xl:w-[21px] xl:h-[21px]" />
       </a>
       <a href="#">
-        <img src="../../../assets/icon/facebook.svg" alt="" class="sm:w-[15px] sm:h-[15px] xl:w-[21px] xl:h-[21px]" />
+        <img src="../../../assets/icon/facebook.svg" alt="" class="w-[15px] h-[15px] xl:w-[21px] xl:h-[21px]" />
       </a>
       <a href="#">
-        <img src="../../../assets/icon/twiter.svg" alt="" class="sm:w-[15px] sm:h-[15px] xl:w-[21px] xl:h-[21px]" />
+        <img src="../../../assets/icon/twiter.svg" alt="" class="w-[15px] h-[15px] xl:w-[21px] xl:h-[21px]" />
       </a>
     </div>
   </div>
