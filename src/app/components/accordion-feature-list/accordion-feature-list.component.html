@@ -1,1 +1,129 @@
-<p>accordion-feature-list works!</p>
+<div class="sm:hidden bg-white shadow-xl rounded-[15px] px-[21px] py-[26px]">
+  <h3 class="text-[26px] text-[#282828] font-poppins_semiBold">Basic</h3>
+  <div class="border-b-2 py-[20px]">
+    <p class="text-[#272E35] font-poppins_semiBold text-[45px]">
+      <sup class="text-[11px] top-[-30px]">$</sup>0<sub
+        class="text-[#6E757C] text-[11px]"
+        >/month</sub
+      >
+    </p>
+  </div>
+  <p class="text-[#6E757C] font-inter_medium text-[11px] mt-[24px] mb-[16px]">
+    Completely 100% <br />
+    Free Plan
+  </p>
+  <button
+    class="bg-[rgba(108,95,188,1)] text-[11px] px-[18px] py-[12px] rounded-[10px] text-white border duration-300 hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
+  >
+    START FREE
+  </button>
+  <p
+    class="flex items-center gap-[10px] cursor-pointer text-[16px] font-inter_bold mt-[33px]"
+    (click)="toggle(0)"
+  >
+    See features
+    <i
+      class="pi text-[16px]"
+      [ngClass]="activeIndex === 0 ? 'pi-angle-up' : 'pi-angle-down'"
+    ></i>
+  </p>
+
+  <div
+    class="overflow-hidden transition-all duration-300 ease-in-out"
+    [ngClass]="
+      activeIndex === 0 ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
+    "
+  >
+    <p
+      class="text-[rgba(153,153,153,1)] flex items-center gap-[10px] text-[11px] mt-[12px]"
+    >
+      <span
+        class="bg-[#6C5FBC] flex items-center justify-center w-[18px] h-[18px] rounded-[50px]"
+      >
+        <i class="pi pi-check text-white text-[11px]"></i>
+      </span>
+      Support 24/7
+    </p>
+    <p
+      class="text-[rgba(153,153,153,1)] flex items-center gap-[10px] text-[11px] mt-[12px]"
+    >
+      <span
+        class="bg-[#6C5FBC] flex items-center justify-center w-[18px] h-[18px] rounded-[50px]"
+      >
+        <i class="pi pi-check text-white text-[11px]"></i>
+      </span>
+      Support 24/7
+    </p>
+    <p
+      class="text-[rgba(153,153,153,1)] flex items-center gap-[10px] text-[11px] mt-[12px]"
+    >
+      <span
+        class="bg-[#6C5FBC] flex items-center justify-center w-[18px] h-[18px] rounded-[50px]"
+      >
+        <i class="pi pi-check text-white text-[11px]"></i>
+      </span>
+      Support 24/7
+    </p>
+  </div>
+</div>
+
+<div
+  class="sm:hidden bg-white shadow-xl rounded-[15px] px-[21px] py-[26px] mt-[30px]"
+>
+  <h3 class="text-[26px] text-[#282828] font-poppins_semiBold">Premium</h3>
+  <div class="border-b-2 py-[20px]">
+    <p class="text-[#272E35] font-poppins_semiBold text-[45px]">
+      <sup class="text-[11px] top-[-30px]">$</sup>9<sub
+        class="text-[#6E757C] text-[11px]"
+        >/month</sub
+      >
+    </p>
+  </div>
+  <p class="text-[#6E757C] font-inter_medium text-[11px] mt-[24px] mb-[16px]">
+    Completely 100% <br />
+    Free Plan
+  </p>
+  <button
+    class="bg-[rgba(108,95,188,1)] text-[11px] px-[18px] py-[12px] rounded-[10px] text-white border duration-300 hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
+  >
+    start Pro
+  </button>
+  <p
+    class="flex items-center gap-[10px] cursor-pointer text-[16px] font-inter_bold mt-[33px]"
+    (click)="toggle(1)"
+  >
+    See features
+    <i
+      class="pi text-[16px]"
+      [ngClass]="activeIndex === 1 ? 'pi-angle-up' : 'pi-angle-down'"
+    ></i>
+  </p>
+
+  <div
+    class="overflow-hidden transition-all duration-300 ease-in-out"
+    [ngClass]="
+      activeIndex === 1 ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
+    "
+  >
+    <p
+      class="text-[rgba(153,153,153,1)] flex items-center gap-[10px] text-[11px] mt-[12px]"
+    >
+      <span
+        class="bg-[#6C5FBC] flex items-center justify-center w-[18px] h-[18px] rounded-[50px]"
+      >
+        <i class="pi pi-check text-white text-[11px]"></i>
+      </span>
+      Support 24/7
+    </p>
+    <p
+      class="text-[rgba(153,153,153,1)] flex items-center gap-[10px] text-[11px] mt-[12px]"
+    >
+      <span
+        class="bg-[#6C5FBC] flex items-center justify-center w-[18px] h-[18px] rounded-[50px]"
+      >
+        <i class="pi pi-check text-white text-[11px]"></i>
+      </span>
+      Support 24/7
+    </p>
+  </div>
+</div>
