@@ -7,6 +7,7 @@ import { PricingPageComponent } from './pages/pricing-page/pricing-page.componen
 import { MenuBasicComponent } from './pages/menu/menu-basic/menu-basic.component';
 import { SingUpComponent } from './components/sing-up/sing-up.component';
 import { LoginComponent } from './components/login/login.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 export const routes: Routes = [
   {
@@ -40,6 +41,10 @@ export const routes: Routes = [
   {
     path: 'pricing-page',
     component: PricingPageComponent,
+  },
+  {
+    path: 'blog',
+    component: BlogComponent,
   },
   
 ];
