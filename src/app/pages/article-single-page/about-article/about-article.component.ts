@@ -1,17 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { ArticleCardComponent } from '../../../components/article-card/article-card.component';
+import { Component } from '@angular/core';
 import { ArticleInterface } from '../../../models/articles';
 import { ArticleService } from '../../../services/article.service';
+import { ArticleCardComponent } from '../../../components/article-card/article-card.component';
 
 @Component({
-  selector: 'app-articles',
+  selector: 'app-about-article',
   standalone: true,
   imports: [ArticleCardComponent],
-  templateUrl: './articles.component.html',
-  styleUrl: './articles.component.css',
+  templateUrl: './about-article.component.html',
+  styleUrl: './about-article.component.css'
 })
-export class ArticlesComponent implements OnInit {
-  article!: ArticleInterface[];
+export class AboutArticleComponent {
+ article!: ArticleInterface[];
   /**
    * 
    */

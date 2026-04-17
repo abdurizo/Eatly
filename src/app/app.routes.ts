@@ -8,6 +8,7 @@ import { MenuBasicComponent } from './pages/menu/menu-basic/menu-basic.component
 import { SingUpComponent } from './components/sing-up/sing-up.component';
 import { LoginComponent } from './components/login/login.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { ArticleSinglePageComponent } from './pages/article-single-page/article-single-page.component';
 
 export const routes: Routes = [
   {
@@ -45,6 +46,10 @@ export const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
+  },
+  {
+    path: 'article/:id',
+    component: ArticleSinglePageComponent,
   },
   
 ];

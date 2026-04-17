@@ -1,0 +1,59 @@
+<section class="container xl:mt-[80px] xl:mb-[168px] grid grid-cols-3 xl:gap-[34px]">
+  <div class="col-span-2 border-r-2 xl:pr-[75px]">
+    <h2
+      class="text-[#252525] font-poppins_semiBold xl:text-[33px] xl:mb-[35px]"
+    >
+      Browse restaurants and menus
+    </h2>
+    <p class="font-poppins_regular text-[#252525] xl:text-[22px] xl:mb-[90px]">
+      Once you're logged in, you can browse through the list of available
+      restaurants on the Eatly website. You can filter by cuisine, price, and
+      distance to find the perfect restaurant for your needs. Click on a
+      restaurant to view its menu. Once you're logged in, you can browse through
+      the list of available restaurants on the Eatly website. You can filter by
+      cuisine, price, and distance.
+    </p>
+    <h2
+      class="text-[#252525] font-poppins_semiBold xl:text-[33px] xl:mb-[35px]"
+    >
+      Browse restaurants and menus
+    </h2>
+    <p class="font-poppins_regular text-[#252525] xl:text-[22px] xl:mb-[90px]">
+      Once you're logged in, you can browse through the list of available
+      restaurants on the Eatly website. You can filter by cuisine, price, and
+      distance to find the perfect restaurant for your needs. Click on a
+      restaurant to view its menu. Once you're logged in, you can browse through
+      the list of available restaurants on the Eatly website. You can filter by
+      cuisine, price, and distance.
+    </p>
+    <h2
+      class="text-[#252525] font-poppins_semiBold xl:text-[33px] xl:mb-[35px]"
+    >
+      Browse restaurants and menus
+    </h2>
+    <p class="font-poppins_regular text-[#252525] xl:text-[22px] xl:mb-[120px]">
+      Once you're logged in, you can browse through the list of available
+      restaurants on the Eatly website. You can filter by cuisine, price, and
+      distance to find the perfect restaurant for your needs. Click on a
+      restaurant to view its menu. Once you're logged in, you can browse through
+      the list of available restaurants on the Eatly website. You can filter by
+      cuisine, price, and distance.
+    </p>
+  
+      
+   
+  </div>
+  <div class="">
+    @for (item of article; track item.id) {
+      <app-article-card [data]="item"></app-article-card>
+    }
+  </div>
+  <button
+        class="order-2 sm:order-1 font-poppins_medium bg-[rgba(108,95,188,1)] inline-block px-[18px] sm:px-[10px] md:px-[18px] xl:px-[26px] py-[10px] sm:py-[5px] md:py-[10px] xl:py-[15px] rounded-[17px] text-white text-[12px] sm:text-[8px] md:text-[12px] xl:text-[18px] duration-300 border hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
+      >
+        Next article
+        <i
+          class="pi pi-arrow-right sm:ml-[2px] md:ml-[10px] text-[12px] sm:text-[8px] md:text-[12px] xl:text-[18px]"
+        ></i>
+      </button>
+</section>

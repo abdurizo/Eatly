@@ -1,11 +1,36 @@
-<div class="">
-  <img src="" alt="" />
-  <h3 class=""></h3>
-  <div class="">
-    <div class="">
-      <div class=""><img src="" alt="" /></div>
-      <p class=""></p>
-      <p class=""></p>
+<div
+  class="bg-white rounded-[15px] shadow-xl px-[14px] xl:px-[20px] py-[17px] xl:py-[25px]"
+>
+  <a [routerLink]="['/article',data.id]" class="">
+    <div class="rounded-[15px]">
+      <img [src]="data.photo" alt="" class="w-full" />
     </div>
-  </div>
+    <h3
+      class="font-poppins_medium text-[#252525] text-[14px] lg:text-[15px] xl:text-[20px] py-[13px] lg:py-[15px] xl:py-[20px]"
+    >
+      {{ data?.title }}
+    </h3>
+    <div class="flex items-end justify-between">
+      <div class="flex items-center gap-[8px] xl:gap-[11px]">
+        <div
+          class="w-[30px] xl:w-[43px] h-[30px] xl:h-[43px] rounded-[50px] overflow-hidden border"
+        >
+          <img [src]="data?.user" alt="" class="w-full" />
+        </div>
+        <div class="">
+          <p
+            class="font-poppins_regular text-[#8D8D8D] text-[8px] xl:text-[11px]"
+          >
+            Written By
+          </p>
+          <p class="font-poppins_medium text-[12px] xl:text-[17px]">
+            Perperzon
+          </p>
+        </div>
+      </div>
+      <p class="font-poppins_medium text-[#B7B4B4] text-[11px] xl:text-[15px]">
+        15 DEC, 2022
+      </p>
+    </div>
+  </a>
 </div>
