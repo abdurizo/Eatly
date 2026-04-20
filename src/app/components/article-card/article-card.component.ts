@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ArticleInterface } from '../../models/articles';
-import { RouterLink } from "@angular/router";
+import { RouterLink,} from "@angular/router";
 
 @Component({
   selector: 'app-article-card',
@@ -11,4 +11,5 @@ import { RouterLink } from "@angular/router";
 })
 export class ArticleCardComponent {
 @Input() data!:ArticleInterface;
+
 }

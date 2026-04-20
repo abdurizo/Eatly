@@ -17,8 +17,10 @@ export class ArticleSinglePageComponent implements OnInit{
   id!: number;
   constructor(private route: ActivatedRoute, private articleServiceId:ArticleService) {}
   async ngOnInit() {
-    this.id = Number(this.route.snapshot.paramMap.get('id'));
-    this.data = await this.articleServiceId.getArticlesDateId(this.id);
-    console.log('DATA:', this.data);
+     this.route.paramMap.subscribe(async (params) => {
+      this.id = Number(params.get('id'));
+      this.data = await this.articleServiceId.getArticlesDateId(this.id);
+      console.log('DATA:', this.data);
+    });
   }
 }

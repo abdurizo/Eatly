@@ -1,5 +1,7 @@
-<section class="container xl:mt-[80px] xl:mb-[168px] grid grid-cols-3 xl:gap-[34px]">
-  <div class="col-span-2 border-r-2 xl:pr-[75px]">
+<section
+  class="container md:mt-[56px] xl:mt-[80px] xl:mb-[168px] grid grid-cols-3 md:gap-[24px] xl:gap-[34px]"
+>
+  <div class="col-span-2 border-r-2 md:pr-[53px] xl:pr-[75px]">
     <h2
       class="text-[#252525] font-poppins_semiBold xl:text-[33px] xl:mb-[35px]"
     >
@@ -39,21 +41,21 @@
       the list of available restaurants on the Eatly website. You can filter by
       cuisine, price, and distance.
     </p>
-  
-      
-   
   </div>
   <div class="">
-    @for (item of article; track item.id) {
-      <app-article-card [data]="item"></app-article-card>
-    }
+    <h2 class="text-[#252525] font-poppins_semiBold xl:text-[30px] xl:mb-[18px]">Top Articles</h2>
+    <div class="grid xl:gap-[25px]">
+      @for (item of filteredArticles; track item.id) {
+        <app-article-card [data]="item"></app-article-card>
+      }
+    </div>
   </div>
   <button
-        class="order-2 sm:order-1 font-poppins_medium bg-[rgba(108,95,188,1)] inline-block px-[18px] sm:px-[10px] md:px-[18px] xl:px-[26px] py-[10px] sm:py-[5px] md:py-[10px] xl:py-[15px] rounded-[17px] text-white text-[12px] sm:text-[8px] md:text-[12px] xl:text-[18px] duration-300 border hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
-      >
-        Next article
-        <i
-          class="pi pi-arrow-right sm:ml-[2px] md:ml-[10px] text-[12px] sm:text-[8px] md:text-[12px] xl:text-[18px]"
-        ></i>
-      </button>
+    class="order-2 sm:order-1 font-poppins_medium bg-[rgba(108,95,188,1)] inline-block px-[18px] sm:px-[10px] md:px-[18px] xl:px-[26px] py-[10px] sm:py-[5px] md:py-[10px] xl:py-[15px] rounded-[17px] text-white text-[12px] sm:text-[8px] md:text-[12px] xl:text-[18px] duration-300 border hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
+  >
+    Next article
+    <i
+      class="pi pi-arrow-right sm:ml-[2px] md:ml-[10px] text-[12px] sm:text-[8px] md:text-[12px] xl:text-[18px]"
+    ></i>
+  </button>
 </section>

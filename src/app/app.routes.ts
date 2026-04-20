@@ -5,10 +5,9 @@ import { SelfProductComponent } from './pages/self-product/self-product.componen
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
 import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
 import { MenuBasicComponent } from './pages/menu/menu-basic/menu-basic.component';
-import { SingUpComponent } from './components/sing-up/sing-up.component';
-import { LoginComponent } from './components/login/login.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ArticleSinglePageComponent } from './pages/article-single-page/article-single-page.component';
+import { BlogBasicComponent } from './pages/blog/blog-basic/blog-basic.component';
 
 export const routes: Routes = [
   {
@@ -22,11 +21,11 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'menu-basic',
+        redirectTo: 'menu',
         pathMatch: 'full',
       },
       {
-        path: 'menu-basic',
+        path: 'menu',
         component: MenuBasicComponent,
       },
       {
@@ -46,10 +45,20 @@ export const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'blog',
+        pathMatch: 'full',
+      },
+      {
+        path: 'blog',
+        component: BlogBasicComponent,
+      },
+      {
+        path: 'article/:id',
+        component: ArticleSinglePageComponent,
+      },
+    ],
   },
-  {
-    path: 'article/:id',
-    component: ArticleSinglePageComponent,
-  },
-  
 ];
