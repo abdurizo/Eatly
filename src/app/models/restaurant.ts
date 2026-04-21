@@ -1,10 +1,9 @@
-export interface Restaurant{
-    "name": string,
-    "badge": string,
-    "badgeColor": string,
-    "badgeTectColor": string,
-    "time": string,
-    "rating": number,
-    "image": string,
-    "id": string
+export interface RestaurantInterface {
+  id: number;
+  photo: string;
+  photo_bg: string;
+  title: string;
+  badge: string;
+  color: string
+  bgColor: string;
 }

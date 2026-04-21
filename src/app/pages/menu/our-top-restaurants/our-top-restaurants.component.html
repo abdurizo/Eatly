@@ -1,28 +1,30 @@
-<section class="section container">
-  <div class="flex justify-between">
-    <h2 class="title font-poppins_semiBold">
-      Our Top <span class="text-[rgba(92,78,174,1)]">Restaurants</span>
-    </h2>
-    <a
-      href="#"
-      class="hidden sm:inline-block font-poppins_medium text-[#ACADB9] sm:text-[14px] xltext-[20px]"
-      >View All
-      <i class="pi pi-arrow-right ml-[13px] sm:text-[14px] xl:text-[20px]"></i>
-    </a>
-  </div>
-  <div class="grid sm:grid-cols-3 gap-[30px] sm:gap-[20px] lg:gap-[30px] mt-[46px] md:mt-[85px]">
-    <app-restaurant-card></app-restaurant-card>
-    <app-restaurant-card></app-restaurant-card>
-    <app-restaurant-card></app-restaurant-card>
-  </div>
-  <div
-    class="sm:hidden font-poppins_medium flex justify-end mt-[60px] sm:mt-[25px] md:mt-[46px] xl:mt-[65px]"
-  >
-    <a
-      href="#"
-      class="text-[#ACADB9] text-[20px] sm:text-[14px] xl:text-[20px] flex items-center"
-      >View All
-      <i class="pi pi-arrow-right ml-[13px] sm:text-[14px] xl:text-[20px]"></i>
-    </a>
-  </div>
-</section>
+
+  <section class="section container">
+    <div class="flex justify-between">
+      <h2 class="title font-poppins_semiBold">
+        Our Top <span class="text-[rgba(92,78,174,1)]">Restaurants</span>
+      </h2>
+      <a
+        href="#"
+        class="hidden sm:inline-block font-poppins_medium text-[#ACADB9] sm:text-[14px] xltext-[20px]"
+        >View All
+        <i class="pi pi-arrow-right ml-[13px] sm:text-[14px] xl:text-[20px]"></i>
+      </a>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-[30px] sm:gap-[20px] lg:gap-[30px] mt-[46px] md:mt-[85px]">
+      @for (item of data; track item.id) {
+        <app-restaurant-card [data]="item"></app-restaurant-card>
+      }
+    </div>
+    <div
+      class="sm:hidden font-poppins_medium flex justify-end mt-[60px] sm:mt-[25px] md:mt-[46px] xl:mt-[65px]"
+    >
+      <a
+        href="#"
+        class="text-[#ACADB9] text-[20px] sm:text-[14px] xl:text-[20px] flex items-center"
+        >View All
+        <i class="pi pi-arrow-right ml-[13px] sm:text-[14px] xl:text-[20px]"></i>
+      </a>
+    </div>
+  </section>
+

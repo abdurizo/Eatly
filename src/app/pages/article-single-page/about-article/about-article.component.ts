@@ -17,23 +17,29 @@ export class AboutArticleComponent {
   /**
    *
    */
-  @Input() currentId!: number;
+  @Input() data!: ArticleInterface;
+  /**
+   * 
+   * @param articleService 
+   */
   constructor(private articleService: ArticleService) {}
-
+/**
+ * 
+ */
   async ngOnInit() {
     this.article = await this.articleService.getArticlesDate();
     this.updateFilter();
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes['currentId']) {
+    if (changes['data']) {
       this.updateFilter();
     }
   }
 
   updateFilter() {
     this.filteredArticles = this.article
-      .filter((i) => String(i.id) !== String(this.currentId))
+      .filter((i) => String(i.id) !== String(this.data.id))
       .slice(0, 3);
   }
 }

@@ -29,7 +29,7 @@ export const routes: Routes = [
         component: MenuBasicComponent,
       },
       {
-        path: 'self-product',
+        path: 'self-product/:id',
         component: SelfProductComponent,
       },
       {

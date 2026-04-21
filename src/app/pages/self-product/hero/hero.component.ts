@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RestaurantInterface } from '../../../models/restaurant';
 
 @Component({
   selector: 'app-hero',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './hero.component.css'
 })
 export class HeroComponent {
-
+@Input() data!:RestaurantInterface;
 }

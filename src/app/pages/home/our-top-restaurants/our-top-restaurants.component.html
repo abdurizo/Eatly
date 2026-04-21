@@ -5,9 +5,9 @@
   <div
     class="grid sm:grid-cols-3 gap-[40px] sm:gap-[10px] md:gap-[20px] xl:gap-[30px] mt-[60px] sm:mt-[35px] md:mt-[60px] xl:mt-[85px]"
   >
-    <app-restaurant-card></app-restaurant-card>
-    <app-restaurant-card></app-restaurant-card>
-    <app-restaurant-card></app-restaurant-card>
+  @for (item of restaurantInterface; track item.id) {
+    <app-restaurant-card [data]="item"></app-restaurant-card>
+  }
   </div>
   <div class="font-poppins_medium flex justify-end mt-[60px] sm:mt-[25px] md:mt-[46px] xl:mt-[65px]">
     <a
@@ -17,4 +17,5 @@
       <i class="pi pi-arrow-right ml-[13px] sm:text-[14px] xl:text-[20px]"></i>
     </a>
   </div>
+  
 </section>

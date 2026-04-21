@@ -4,43 +4,72 @@
       "id": 1,
       "photo": "../assets/images/articles-1.jpg",
       "photo_bg": "../assets/images/articles-1-big.jpeg",
-      "title":"How To Order Food ?",
-      "user":"../assets/images/face.jpg"
+      "title": "How To Order Food ?",
+      "user": "../assets/images/face.jpg"
     },
     {
       "id": 2,
       "photo": "../assets/images/articles-2.jpg",
       "photo_bg": "../assets/images/articles-2-big.jpg",
-      "title":"How To Track The Order ?",
-      "user":"../assets/images/face.jpg"
+      "title": "How To Track The Order ?",
+      "user": "../assets/images/face.jpg"
     },
     {
       "id": 3,
       "photo": "../assets/images/articles-3.jpg",
       "photo_bg": "../assets/images/articles-3-big.jpg",
-      "title":"How To Manage Cards ?",
-      "user":"../assets/images/face.jpg"
+      "title": "How To Manage Cards ?",
+      "user": "../assets/images/face.jpg"
     },
     {
       "id": 4,
       "photo": "../assets/images/articles-4.jpg",
       "photo_bg": "../assets/images/articles-4-big.png",
-      "title":"Tips & Tricks For Business",
-      "user":"../assets/images/face.jpg"
+      "title": "Tips & Tricks For Business",
+      "user": "../assets/images/face.jpg"
     },
     {
       "id": 5,
       "photo": "../assets/images/articles-5.jpg",
       "photo_bg": "../assets/images/articles-5-big.jpg",
-      "title":"How To Control Money ?",
-      "user":"../assets/images/face.jpg"
+      "title": "How To Control Money ?",
+      "user": "../assets/images/face.jpg"
     },
     {
       "id": 6,
       "photo": "../assets/images/articles-6.jpg",
       "photo_bg": "../assets/images/articles-6-big.webp",
-      "title":"Top 5 Business Ideas",
-      "user":"../assets/images/face.jpg"
+      "title": "Top 5 Business Ideas",
+      "user": "../assets/images/face.jpg"
+    }
+  ],
+  "restaurantsDate": [
+    {
+      "id": 1,
+      "photo": "../assets/images/chicken.png",
+      "photo_bg": "../assets/images/articles-1-big.jpeg",
+      "title": "The Chicken King",
+      "badge": "Healthy",
+      "color": "#DAA31A",
+      "bgColor": "#F7EDD0"
+    },
+    {
+      "id": 2,
+      "photo": "../assets/images/burger.png",
+      "photo_bg": "../assets/images/articles-1-big.jpeg",
+      "title": "The Burger King",
+      "badge": "Trending",
+      "color": "#FB471D",
+      "bgColor": "#F7C5BA"
+    },
+    {
+      "id": 3,
+      "photo": "../assets/images/burger.png",
+      "photo_bg": "../assets/images/articles-1-big.jpeg",
+      "title": "The Chicken King",
+      "badge": "Healthy",
+      "color": "#DAA31A",
+      "bgColor": "#F7EDD0"
     }
   ]
 }

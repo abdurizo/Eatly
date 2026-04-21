@@ -1,53 +1,72 @@
 <section
-  class="container md:mt-[56px] xl:mt-[80px] xl:mb-[168px] grid grid-cols-3 md:gap-[24px] xl:gap-[34px]"
+  class="container md:mt-[56px] xl:mt-[80px] mb-[92px] md:mb-[118px] xl:mb-[168px]"
 >
-  <div class="col-span-2 border-r-2 md:pr-[53px] xl:pr-[75px]">
-    <h2
-      class="text-[#252525] font-poppins_semiBold xl:text-[33px] xl:mb-[35px]"
+  <div class="grid grid-cols-3 md:gap-[24px] xl:gap-[34px]">
+    <div
+      class="col-span-3 md:col-span-2 md:border-r-2 md:pr-[53px] xl:pr-[75px]"
     >
-      Browse restaurants and menus
-    </h2>
-    <p class="font-poppins_regular text-[#252525] xl:text-[22px] xl:mb-[90px]">
-      Once you're logged in, you can browse through the list of available
-      restaurants on the Eatly website. You can filter by cuisine, price, and
-      distance to find the perfect restaurant for your needs. Click on a
-      restaurant to view its menu. Once you're logged in, you can browse through
-      the list of available restaurants on the Eatly website. You can filter by
-      cuisine, price, and distance.
-    </p>
-    <h2
-      class="text-[#252525] font-poppins_semiBold xl:text-[33px] xl:mb-[35px]"
-    >
-      Browse restaurants and menus
-    </h2>
-    <p class="font-poppins_regular text-[#252525] xl:text-[22px] xl:mb-[90px]">
-      Once you're logged in, you can browse through the list of available
-      restaurants on the Eatly website. You can filter by cuisine, price, and
-      distance to find the perfect restaurant for your needs. Click on a
-      restaurant to view its menu. Once you're logged in, you can browse through
-      the list of available restaurants on the Eatly website. You can filter by
-      cuisine, price, and distance.
-    </p>
-    <h2
-      class="text-[#252525] font-poppins_semiBold xl:text-[33px] xl:mb-[35px]"
-    >
-      Browse restaurants and menus
-    </h2>
-    <p class="font-poppins_regular text-[#252525] xl:text-[22px] xl:mb-[120px]">
-      Once you're logged in, you can browse through the list of available
-      restaurants on the Eatly website. You can filter by cuisine, price, and
-      distance to find the perfect restaurant for your needs. Click on a
-      restaurant to view its menu. Once you're logged in, you can browse through
-      the list of available restaurants on the Eatly website. You can filter by
-      cuisine, price, and distance.
-    </p>
-  </div>
-  <div class="">
-    <h2 class="text-[#252525] font-poppins_semiBold xl:text-[30px] xl:mb-[18px]">Top Articles</h2>
-    <div class="grid xl:gap-[25px]">
-      @for (item of filteredArticles; track item.id) {
-        <app-article-card [data]="item"></app-article-card>
-      }
+      <h2
+        class="text-[#252525] font-poppins_semiBold text-[17px] md:text-[23px] xl:text-[33px] mb-[18px] md:mb-[24px] xl:mb-[35px]"
+      >
+        Browse restaurants and menus
+      </h2>
+      <p
+        class="font-poppins_regular text-[#252525] text-[11px] md:text-[15px] xl:text-[22px] mb-[55px] md:mb-[63px] xl:mb-[90px]"
+      >
+        Once you're logged in, you can browse through the list of available
+        restaurants on the Eatly website. You can filter by cuisine, price, and
+        distance to find the perfect restaurant for your needs. Click on a
+        restaurant to view its menu. Once you're logged in, you can browse
+        through the list of available restaurants on the Eatly website. You can
+        filter by cuisine, price, and distance.
+      </p>
+
+      <div class=" md:hidden mb-[55px]">
+        <img [src]="data?.photo" alt="" />
+      </div>
+
+      <h2
+        class="text-[#252525] font-poppins_semiBold text-[17px] md:text-[23px] xl:text-[33px] mb-[18px] md:mb-[24px] xl:mb-[35px]"
+      >
+        Browse restaurants and menus
+      </h2>
+      <p
+        class="font-poppins_regular text-[#252525] text-[11px] md:text-[15px] xl:text-[22px] mb-[55px] md:mb-[63px] xl:mb-[90px]"
+      >
+        Once you're logged in, you can browse through the list of available
+        restaurants on the Eatly website. You can filter by cuisine, price, and
+        distance to find the perfect restaurant for your needs. Click on a
+        restaurant to view its menu. Once you're logged in, you can browse
+        through the list of available restaurants on the Eatly website. You can
+        filter by cuisine, price, and distance.
+      </p>
+      <h2
+        class="text-[#252525] font-poppins_semiBold text-[17px] md:text-[23px] xl:text-[33px] mb-[18px] md:mb-[24px] xl:mb-[35px]"
+      >
+        Browse restaurants and menus
+      </h2>
+      <p
+        class="font-poppins_regular text-[#252525] text-[11px] md:text-[15px] xl:text-[22px] mb-[55px] md:mb-[63px] xl:mb-[120px]"
+      >
+        Once you're logged in, you can browse through the list of available
+        restaurants on the Eatly website. You can filter by cuisine, price, and
+        distance to find the perfect restaurant for your needs. Click on a
+        restaurant to view its menu. Once you're logged in, you can browse
+        through the list of available restaurants on the Eatly website. You can
+        filter by cuisine, price, and distance.
+      </p>
+    </div>
+    <div class="hidden md:inline-block">
+      <h2
+        class="text-[#252525] font-poppins_semiBold md:text-[21px] xl:text-[30px] md:mb-[12px] xl:mb-[18px]"
+      >
+        Top Articles
+      </h2>
+      <div class="grid md:gap-[15px] xl:gap-[25px]">
+        @for (item of filteredArticles; track item.id) {
+          <app-article-card [data]="item"></app-article-card>
+        }
+      </div>
     </div>
   </div>
   <button

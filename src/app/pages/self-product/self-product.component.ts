@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeroComponent } from './hero/hero.component';
 import { PopularComponent } from './popular/popular.component';
 import { ChickenVegetablesComponent } from './chicken-vegetables/chicken-vegetables.component';
 import { FrequentlyAskedComponent } from '../../components/frequently-asked/frequently-asked.component';
+import { RestaurantInterface } from '../../models/restaurant';
+import { ActivatedRoute } from '@angular/router';
+import { RestaurantService } from '../../services/restaurant.service';
 
 @Component({
   selector: 'app-self-product',
@@ -16,4 +19,18 @@ import { FrequentlyAskedComponent } from '../../components/frequently-asked/freq
   templateUrl: './self-product.component.html',
   styleUrl: './self-product.component.css',
 })
-export class SelfProductComponent {}
+export class SelfProductComponent implements OnInit{
+restaurantInterface!:RestaurantInterface;
+id!:number;
+/**
+ * 
+ */
+constructor(private route: ActivatedRoute, private restaurantService:RestaurantService){}
+/**
+ * 
+ */
+async ngOnInit() {
+  this.id = Number(this.route.snapshot.paramMap.get('id'));
+  this.restaurantInterface = await this.restaurantService.getRestaurantDateId(this.id);
+}
+}
