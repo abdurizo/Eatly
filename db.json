@@ -71,5 +71,47 @@
       "color": "#DAA31A",
       "bgColor": "#F7EDD0"
     }
+  ],
+  "dishesData":[
+    {
+      "id": 1,
+      "photo": "../assets/images/salat-1.png",
+      "title": "Chicken Hell",
+      "badge": "Healthy",
+      "color": "#DAA31A",
+      "bgColor": "#F7EDD0"
+    },
+    {
+      "id": 2,
+      "photo": "../assets/images/salat-2.png",
+      "title": "Swe Dish",
+      "badge": "Healthy",
+      "color": "#DAA31A",
+      "bgColor": "#F7EDD0"
+    },
+    {
+      "id": 3,
+      "photo": "../assets/images/salat-3.png",
+      "title": "Swe Dish",
+      "badge": "Healthy",
+      "color": "#DAA31A",
+      "bgColor": "#F7EDD0"
+    },
+    {
+      "id": 4,
+      "photo": "../assets/images/salat-4.png",
+      "title": "Fish Dish",
+      "badge": "Healthy",
+      "color": "#DAA31A",
+      "bgColor": "#F7EDD0"
+    },
+    {
+      "id": 5,
+      "photo": "../assets/images/salat-5.png",
+      "title": "Fish Dish",
+      "badge": "Healthy",
+      "color": "#DAA31A",
+      "bgColor": "#F7EDD0"
+    }
   ]
 }
