@@ -8,6 +8,7 @@ import { MenuBasicComponent } from './pages/menu/menu-basic/menu-basic.component
 import { BlogComponent } from './pages/blog/blog.component';
 import { ArticleSinglePageComponent } from './pages/article-single-page/article-single-page.component';
 import { BlogBasicComponent } from './pages/blog/blog-basic/blog-basic.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 export const routes: Routes = [
   {
@@ -60,5 +61,9 @@ export const routes: Routes = [
         component: ArticleSinglePageComponent,
       },
     ],
+  },
+  {
+    path: 'container',
+    component: ContactComponent,
   },
 ];

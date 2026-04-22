@@ -6,11 +6,11 @@ import { RestaurantInterface } from '../models/restaurant';
 })
 export class RestaurantService {
   async getRestaurantDate(): Promise<RestaurantInterface[]> {
-    const data = await fetch('http://localhost:3000/restaurantsDate');
+    const data = await fetch('http://localhost:3000/restaurantsData');
     return (await data.json()) ?? [];
   }
   async getRestaurantDateId(id: number): Promise<RestaurantInterface> {
-    const data = await fetch(`http://localhost:3000/restaurantsDate/${id}`);
+    const data = await fetch(`http://localhost:3000/restaurantsData/${id}`);
     return (await data.json()) ?? [];
   }
 }

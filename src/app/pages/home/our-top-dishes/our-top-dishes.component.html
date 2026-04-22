@@ -3,11 +3,9 @@
     Our Top <span class="text-[rgba(92,78,174,1)]">Dishes</span>
   </h2>
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-[20px] xl:gap-[30px] mt-[65px] md:mt-[85px]">
-    <app-dish-card></app-dish-card>
-    <app-dish-card></app-dish-card>
-    <app-dish-card></app-dish-card>
-    <app-dish-card></app-dish-card>
-    <app-dish-card></app-dish-card>
+    @for (item of data; track item.id) {
+      <app-dish-card [data]="item"></app-dish-card>
+    }
   </div>
   <div class="font-poppins_medium flex justify-end sm:mt-[25px] md:mt-[46px] xl:mt-[65px]">
     <a

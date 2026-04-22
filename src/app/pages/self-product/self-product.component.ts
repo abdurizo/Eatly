@@ -19,18 +19,6 @@ import { RestaurantService } from '../../services/restaurant.service';
   templateUrl: './self-product.component.html',
   styleUrl: './self-product.component.css',
 })
-export class SelfProductComponent implements OnInit{
-restaurantInterface!:RestaurantInterface;
-id!:number;
-/**
- * 
- */
-constructor(private route: ActivatedRoute, private restaurantService:RestaurantService){}
-/**
- * 
- */
-async ngOnInit() {
-  this.id = Number(this.route.snapshot.paramMap.get('id'));
-  this.restaurantInterface = await this.restaurantService.getRestaurantDateId(this.id);
-}
+export class SelfProductComponent  {
+  
 }

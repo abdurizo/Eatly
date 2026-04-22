@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { DishInterface } from '../../models/dish';
 
 @Component({
   selector: 'app-dish-card',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './dish-card.component.css'
 })
 export class DishCardComponent {
-
+@Input() data!:DishInterface;
 }

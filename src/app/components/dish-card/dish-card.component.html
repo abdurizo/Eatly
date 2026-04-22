@@ -2,30 +2,48 @@
   <div class="flex justify-end mr-[20px]">
     <img src="../../../assets/icon/heart.svg" alt="" class="" />
   </div>
-  <div class="px-[5px] flex justify-center ">
-    <img src="../../../assets/images/salat-5.png" alt="" class="w-[120px] sm:w-[143px] xl:w-[184px]"/>
+  <div class="px-[5px] flex justify-center h-[120px] sm:h-[143px] xl:h-[184px]">
+    <img
+      [src]="data.photo"
+      alt=""
+      class="w-[120px] sm:w-[143px] xl:w-[184px] h-full object-contain"
+    />
   </div>
   <div class="px-[15px] md:px-[25px]">
     <p
-      class="text-[#DAA31A] bg-[#F7EDD0] w-[40px] xl:w-[65px] text-center text-[8px] xl:text-[12px] rounded-[5px] sm:py-[1px] xl:py-[5px]"
+      [style.color]="data.color"
+      [style.background]="data.bgColor"
+      class="w-[40px] xl:w-[65px] text-center text-[8px] xl:text-[12px] rounded-[5px] sm:py-[1px] xl:py-[5px]"
     >
-      Healthy
+      {{ data.badge }}
     </p>
     <p
-      class="font-poppins_semiBold  text-[rgba(50,49,66,1)] text-[16px] sm:text-[10px] md:text-[16px] lx:text-[23px]"
+      class="font-poppins_semiBold text-[rgba(50,49,66,1)] text-[16px] sm:text-[10px] md:text-[16px] lx:text-[23px]"
     >
-      Chicken Hell
+      {{data.title}}
     </p>
     <div
       class="flex items-center gap-2 font-manrope_regular text-[rgba(142,151,166,1)]"
     >
-      <p class="text-[13px] sm:text-[8px] md:text-[13px] xl:text-[19px]">24min</p>
-      <img src="../../../assets/icon/star-color.svg" alt="" class=" w-[12px] sm:w-[8px] md:w-[12px] xl:w-[17px] " />
+      <p class="text-[13px] sm:text-[8px] md:text-[13px] xl:text-[19px]">
+        24min
+      </p>
+      <img
+        src="../../../assets/icon/star-color.svg"
+        alt=""
+        class="w-[12px] sm:w-[8px] md:w-[12px] xl:w-[17px]"
+      />
       <p class="text-[13px] sm:text-[8px] md:text-[13px] xl:text-[19px]">4.8</p>
     </div>
     <div class="font-manrope_bold flex justify-between items-center mt-[13px]">
-        <h3 class="text-[16px] md:text-[18px] xl:text-[25px] text-[#323142]">$12<span class=" md:text-[13px] xl:text-[18px] text-[#8E97A6]">.99</span></h3>
-        <button class="bg-[#323142] w-[28px] sm:w-[31px] xl:w-[43px] h-[25px] sm:h-[28px] xl:h-[39px] rounded-[8px] text-white text-[18px]">+</button>
+      <h3 class="text-[16px] md:text-[18px] xl:text-[25px] text-[#323142]">
+        ${{data.price}}<span class="md:text-[13px] xl:text-[18px] text-[#8E97A6]">.{{data.supPrice}}</span>
+      </h3>
+      <button
+        class="bg-[#323142] w-[28px] sm:w-[31px] xl:w-[43px] h-[25px] sm:h-[28px] xl:h-[39px] rounded-[8px] text-white text-[18px]"
+      >
+        +
+      </button>
     </div>
   </div>
 </div>

@@ -11,11 +11,9 @@
     </a>
   </div>
   <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-[30px] sm:gap-[20px] lg:gap-[30px] mt-[46px] md:mt-[85px]">
-    <app-dish-card></app-dish-card>
-    <app-dish-card></app-dish-card>
-    <app-dish-card></app-dish-card>
-    <app-dish-card></app-dish-card>
-    <app-dish-card></app-dish-card>
+     @for (item of data; track item.id) {
+      <app-dish-card [data]="item"></app-dish-card>
+    }
   </div>
   <div
     class="sm:hidden font-poppins_medium flex justify-end mt-[60px] sm:mt-[25px] md:mt-[46px] xl:mt-[65px]"
