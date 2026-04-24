@@ -1,45 +1,99 @@
-<div class=" container md:max-w-[1440px] md:mx-auto  md:grid grid-cols-2 md:gap-[100px] xl:gap-[300px] py-[50px] md:py-[149px] xl:py-[210px]">
+<div
+  class="container lg:max-w-[1440px] md:mx-auto md:grid grid-cols-2 md:gap-[30px] lg:gap-[100px] xl:gap-[300px] py-[50px] md:py-[149px] xl:py-[210px]"
+>
   <div class="">
     <div
-      class="relative bg-[#6C5FBC] md:w-[377px] xl:w-[571px] md:h-[581px] xl:h-[818px] flex items-center flex-col py-[23px] md:py-0"
+      class="relative bg-[#6C5FBC] lg:w-[377px] xl:w-[571px] md:h-[581px] xl:h-[818px] flex items-center flex-col py-[23px] md:py-0"
     >
-      <h2 class="font-poppins_semiBold text-white text-[24px] md:text-[34px] xl:text-[48px] md:mt-[60px] xl:mt-[84px]">
+      <h2
+        class="font-poppins_semiBold text-white text-[24px] md:text-[34px] xl:text-[48px] md:mt-[60px] xl:mt-[84px]"
+      >
         Just Contact
       </h2>
-      <div class=" w-[138px] md:w-[238px] xl:w-[336px]">
-        <img src="../../../assets/images/arrow-8.png" alt="" class="w-full"/>
+      <div class="w-[138px] md:w-[238px] xl:w-[336px]">
+        <img src="../../../assets/images/arrow-8.png" alt="" class="w-full" />
       </div>
-      <div class="hidden md:block absolute md:top-[200px] xl:top-[270px] md:right-[-150px] xl:right-[-250px] md:w-[264px] xl:w-[371px]">
+      <div
+        class="hidden md:block absolute md:top-[200px] xl:top-[270px] lg:right-[-150px] xl:right-[-250px] md:w-[264px] xl:w-[371px]"
+      >
         <img src="../../../assets/images/mobile.png" alt=" w-full" />
       </div>
     </div>
   </div>
   <div class="">
-    <h2 class="hidden md:block text-[#252525] font-poppins_semiBold md:text-[28px] xl:text-[40px]">
+    <h2
+      class="hidden md:block text-[#252525] font-poppins_semiBold md:text-[28px] xl:text-[40px]"
+    >
       Customer <span class="text-[#6C5FBC]">Support</span>
     </h2>
-    <form class="w-full md:w-[350px] xl:w-[493px] my-[46px] md:my-[43px] xl:mt-[62px]">
-      <input
-        type="text"
-        placeholder="FULL NAME"
-        class="w-full rounded-[16px] bg-[#F5F5F5] block text-[#C2C3CB] text-[13px] md:text-[11px] xl:text-[16px] outline-none placeholder:font-poppins_semiBold placeholder:text-[#B6B6B6] font-poppins_medium focus-within:text-[#6C5FBC] border-2 border-[#6C5FBC] p-[15px] md:p-[18px] xl:p-[25px]"
-      />
-      <input
-        type="text"
-        placeholder="ENTER YOUR EMAIL"
-        class="w-full rounded-[16px] bg-[#F5F5F5] block text-[#C2C3CB] text-[13px] md:text-[11px] xl:text-[16px] mb-[50px] mt-[12px]  md:my-[18px] xl:my-[26px] outline-none placeholder:font-poppins_semiBold placeholder:text-[#B6B6B6] font-poppins_medium focus-within:text-[#6C5FBC] border-2 border-[#6C5FBC] p-[15px] md:p-[18px] xl:p-[25px]"
-      />
-      <textarea
-        rows="15"
-        cols=full
-        placeholder="ENTER YOUR EMAIL"
-        class="w-full rounded-[16px] bg-[#F5F5F5] block text-[#C2C3CB] text-[13px] md:text-[11px] xl:text-[16px] outline-none placeholder:font-poppins_semiBold placeholder:text-[#B6B6B6] font-poppins_medium focus-within:text-[#6C5FBC] border-2 border-[#6C5FBC] p-[15px] md:p-[18px] xl:p-[25px]"
-      ></textarea>
-      <button
-            class="w-full inline-block text-[13px] md:text-[11px] xl:text-[16px] text-center mt-[22px]  md:mt-[30px] xl:mt-[43px] font-inter_medium bg-[rgba(108,95,188,1)] md:px-[26px] py-[19px] py-[15px] md:py-[24px] rounded-[17px] text-white border duration-300 hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
+     <p-toast position="top-right"/>
+    <form
+      #form="ngForm"
+      (ngSubmit)="submit(form)"
+      class="w-full lg:w-[350px] xl:w-[493px] my-[46px] md:my-[43px] xl:mt-[62px]"
+    >
+      <div class="">
+        <input
+          type="text"
+          placeholder="FULL NAME"
+          name="name"
+          ngModel
+          #name="ngModel"
+          required
+          class="w-full rounded-[16px] bg-[#F5F5F5] block text-[#C2C3CB] text-[13px] md:text-[11px] xl:text-[16px] outline-none placeholder:font-poppins_semiBold placeholder:text-[#B6B6B6] font-poppins_medium focus-within:text-[#6C5FBC] border-2 border-[#6C5FBC] p-[15px] md:p-[18px] xl:p-[25px]"
+        />
+        @if (name.errors?.["required"] && (name.touched || form.submitted)) {
+          <small class="text-[#EB3F5E] font-poppins_regular"
+            >Full name entry is required</small
           >
-            Send Now
-          </button>
+        }
+      </div>
+      <div class="mb-[50px] mt-[12px] md:my-[18px] xl:my-[26px]">
+        <input
+          type="email"
+          placeholder="ENTER YOUR EMAIL"
+          name="email"
+          ngModel
+          #email="ngModel"
+          required
+          email
+          class="w-full rounded-[16px] bg-[#F5F5F5] block text-[#C2C3CB] text-[13px] md:text-[11px] xl:text-[16px]  outline-none placeholder:font-poppins_semiBold placeholder:text-[#B6B6B6] font-poppins_medium focus-within:text-[#6C5FBC] border-2 border-[#6C5FBC] p-[15px] md:p-[18px] xl:p-[25px]"
+        />
+        @if (email.errors?.["required"] && (email.touched || form.submitted)) {
+          <small class="text-[#EB3F5E] font-poppins_regular"
+            >Email entry is required</small
+          >
+        }
+        @if (email.errors?.["email"] && (email.touched || form.submitted)) {
+          <small class="text-[#EB3F5E] font-poppins_regular"
+            >Enter a valid email address</small
+          >
+        }
+      </div>
+      <div class="">
+        <textarea
+          rows="15"
+          placeholder="Enter The Problem Or Query "
+          name="coment"
+          ngModel
+          #coment="ngModel"
+          required 
+          class="w-full rounded-[16px] bg-[#F5F5F5] block text-[#C2C3CB] text-[13px] md:text-[11px] xl:text-[16px] outline-none placeholder:font-poppins_semiBold placeholder:text-[#B6B6B6] font-poppins_medium focus-within:text-[#6C5FBC] border-2 border-[#6C5FBC] p-[15px] md:p-[18px] xl:p-[25px]"
+        ></textarea>
+        @if (coment.errors?.["required"] && (coment.touched || form.submitted)) {
+          <small class="text-[#EB3F5E] font-poppins_regular"
+            >Enter The Problem Or Query</small
+          >
+        }
+      </div>
+      <button
+        type="submit"
+        class="w-full inline-block text-[13px] md:text-[11px] xl:text-[16px] text-center mt-[22px] md:mt-[30px] xl:mt-[43px] font-inter_medium bg-[rgba(108,95,188,1)] md:px-[26px] py-[19px] py-[15px] md:py-[24px] rounded-[17px] text-white border duration-300 hover:text-[rgba(108,95,188,1)] hover:border hover:border-[rgba(108,95,188,1)] hover:bg-white"
+      >
+        Send Now
+         
+      </button>
     </form>
+   
   </div>
 </div>
